@@ -623,6 +623,30 @@ UpdateMicrosoftProducts -Enable
 # При обновлении Windows не получать обновления для других продуктов Майкрософт (значение по умолчанию)
 # UpdateMicrosoftProducts -Disable
 
+# Notify me when a restart is required to finish updating
+# Уведомлять меня о необходимости перезагрузки для завершения обновления
+RestartNotification -Show
+
+# Do not notify me when a restart is required to finish updating (default value)
+# Не yведомлять меня о необходимости перезагрузки для завершения обновления (значение по умолчанию)
+# RestartNotification -Hide
+
+# Restart as soon as possible to finish updating
+# Перезапустить устройство как можно быстрее, чтобы завершить обновление
+RestartDeviceAfterUpdate -Enable
+
+# Don't restart as soon as possible to finish updating (default value)
+# Не перезапускать устройство как можно быстрее, чтобы завершить обновление (значение по умолчанию)
+# RestartDeviceAfterUpdate -Disable
+
+# Automatically adjust active hours for me based on daily usage
+# Автоматически изменять период активности для этого устройства на основе действий
+ActiveHours -Automatically
+
+# Manually adjust active hours for me based on daily usage (default value)
+# Вручную изменять период активности для этого устройства на основе действий (значение по умолчанию)
+# ActiveHours -Manually
+
 # Set power plan on "High performance". It isn't recommended to turn on for laptops
 # Установить схему управления питанием на "Высокая производительность". Не рекомендуется включать на ноутбуках
 PowerPlan -High
@@ -820,30 +844,6 @@ NetworkDiscovery -Enable
 # Disable "Network Discovery" and "File and Printers Sharing" for workgroup networks (default value)
 # Выключить сетевое обнаружение и общий доступ к файлам и принтерам для рабочих групп (значение по умолчанию)
 # NetworkDiscovery -Disable
-
-# Show a notification when your PC requires a restart to finish updating
-# Показывать уведомление, когда компьютеру требуется перезагрузка для завершения обновления
-RestartNotification -Show
-
-# Do not show a notification when your PC requires a restart to finish updating (default value)
-# Не показывать уведомление, когда компьютеру требуется перезагрузка для завершения обновления (значение по умолчанию)
-# RestartNotification -Hide
-
-# Restart this device as soon as possible when a restart is required to install an update
-# Перезапускать это устройство как можно быстрее, если для установки обновления требуется перезагрузка
-RestartDeviceAfterUpdate -Enable
-
-# Do not restart this device as soon as possible when a restart is required to install an update (default value)
-# Не перезапускать это устройство как можно быстрее, если для установки обновления требуется перезагрузка (значение по умолчанию)
-# RestartDeviceAfterUpdate -Disable
-
-# Automatically adjust active hours for me based on daily usage
-# Автоматически изменять период активности для этого устройства на основе действий
-ActiveHours -Automatically
-
-# Manually adjust active hours for me based on daily usage (default value)
-# Вручную изменять период активности для этого устройства на основе действий (значение по умолчанию)
-# ActiveHours -Manually
 
 <#
 	Register app, calculate hash, and associate with an extension with the "How do you want to open this" pop-up hidden
